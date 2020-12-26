@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MyCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header ng-include="'header.html'"></header>
+    <div class="container">
+        <form class="myForm" name="myF">
+            <div class="title-feedback-page">
+                <h4>CONTACT US</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">               
+                    <div class="feedback-name">
+                        <label for="name">Name *</label>
+                        <input ng-class="(myF.name.$touched)&&(myF.name.$error.required)?'log-in-false':''" ng-model="name" required name="name" type="text" id="name">
+                        <div ng-if="myF.name.$touched">
+                            <span ng-if="myF.name.$error.required" class="text-danger">
+                                This is a required field.
+                            </span>
+                        </div>  
+                    </div>
+                    <div class="feedback-phone">
+                        <label for="passphone">Telephone Number *</label>
+                        <input ng-class="(myF.phone.$touched)&&(myF.phone.$error.required)?'log-in-false':''" ng-model="phone" required name="phone" type="text" id="phone">
+                        <div ng-if="myF.phone.$touched">
+                            <span ng-if="myF.phone.$error.required" class="text-danger">
+                                This is a required field.
+                            </span>
+                        </div>  
+                    </div>
+                    <div class="feedback-type">
+                        <label for="type">Please type your message here.</label>
+                        <textarea name="" id="type"   rows="1" ></textarea>
+                    </div>
+                    <div class="feedback-checkbox">
+                        <input ng-model="agree" name="agree" type="checkbox"><span>I would like to receive marketing information from Collingwood Lighting.</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="feedback-email">
+                        <label for="email">Email *</label>
+                        <input ng-class="(myF.mail.$touched)&&(myF.mail.$error.required)?'log-in-false':''" ng-model="mail" required name="mail" type="email" id="email">
+                        <div ng-if="myF.mail.$touched">
+                            <span ng-if="myF.mail.$error.required" class="text-danger">
+                                This is a required field.
+                            </span>
+                        </div>  
+                    </div>
+                </div>
+            <div class="col-12">
+                <div class="feedback-diss">
+                    <p>Collingwood Lighting needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at anytime. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our Privacy Policy.</p>
+                </div>
+            </div>
+            <div  class="feedback-submit col-12">
+                <button ng-disabled="(myF.name.$error.required)||(myF.phone.$error.required)||(myF.mail.$error.required)||(!myF.agree.$viewValue)" style="background: #fff;border:none; color:#5f9baf ;cursor: pointer;font-size: 20px;" href="#">Submit</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    
+    <footer ng-include="'footer.html'"></footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="font/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+       $('.banner-area').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed:800,
+    arrows: false,
+    dots: true,
+    fade:true
+    })
+    </script>
+</body>
+</html>

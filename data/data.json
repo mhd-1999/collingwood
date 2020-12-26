@@ -1,0 +1,14 @@
+[
+    {"name":"Bespoke Bollards","category":"bulbs","price":"60$","img":"img/product/bulb1.jpg"},
+    {"name":"Midi Post Light","category":"bulbs","price":"70$","img":"img/product/bulb2.jpg"},
+    {"name":"Post Light","category":"bulbs","price":"80$","img":"img/product/bulb3.jpg"},
+    {"name":"DL130","category":"Spot lights","price":"60$","img":"img/product/spot1.jpg"},
+    {"name":"MS02 IP","category":"Spot lights","price":"70$","img":"img/product/spot2.jpg"},
+    {"name":"RDSL","category":"Spot lights","price":"80$","img":"img/product/spot3.jpg"},
+    {"name":"WL220","category":"Decoration lights","price":"60$","img":"img/product/deco1.jpg"},
+    {"name":"WL075 SPS","category":"Decoration lights","price":"70$","img":"img/product/deco2.jpg"},
+    {"name":"WL012","category":"Decoration lights","price":"80$","img":"img/product/deco3.jpg"},
+    {"name":"B22 Smart light bulb","category":"Smart lights etc","price":"60$","img":"img/product/smart1.jpg"},
+    {"name":"Smart Plug","category":"Smart lights etc","price":"70$","img":"img/product/smart2.jpg"},
+    {"name":"Smart Dimmable Bridge","category":"Smart lights etc","price":"80$","img":"img/product/smart3.jpg"}
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MyCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header ng-include="'header.html'"></header>
+    <div class="container">
+        <form name="myF" class="myForm">
+            <div class="title-login-page">
+                <h4>CUSTOMER LOGIN</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" style=" border-right: 1px solid #cecece;">
+                    <p style="font-weight: bold;">Login</p>
+                    <div class="login-email">
+                        <label for="email">Email *</label>
+                        <input ng-model="mail" name="mail" ng-class="(myF.mail.$touched)&&(myF.mail.$valid)?'log-in-false':''" type="email" id="email">
+                        <small class="text-muted " ng-if="myF.mail.$touched">
+                            <span class="text-danger" ng-if="myF.mail.$valid">
+                                This is a required field.
+                            </span>
+                        </small>
+                    </div>
+                    <div class="login-pass">
+                        <label for="pass">Password *</label>
+                        <input ng-model="pass" name="pass" ng-class="(myF.pass.$touched)&&(myF.pass.$error.required)?'log-in-false':''" type="password" id="pass" required>
+                         <small class="text-muted " ng-if="myF.pass.$touched">
+                            <span class="text-danger" ng-if="myF.pass.$error.required">
+                                This is a required field.
+                            </span>
+                        </small>
+                    </div>
+                    <div class="login-ForgottenPassword">
+                        <a href="#">Forgotten Password</a>
+                    </div>
+               <div class="login-btn">    
+                        <button>Log in</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p style="font-weight: bold;">NEW TO COLLINGWOOD?</p>
+                    <div class="sign-up-btn">
+                        <button>JOIN</button>
+                        <p>OR</p>
+                    </div>
+                    <div class="login-op">
+                        <div class="login-icon"><i class="fab fa-facebook-square"></i></div>
+                        <div class="login-icon"><i class="fab fa-instagram"></i></div>                    
+                        <div class="login-icon"><i class="fab fa-google-plus-g"></i></div>
+                        <div class="login-icon"><i class="fab fa-amazon"></i></div>                                                          
+                    </div>
+                </div>
+               
+            </div>
+        </form>
+    </div>
+    
+    <footer ng-include="'footer.html'"></footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="font/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+       $('.banner-area').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed:800,
+    arrows: false,
+    dots: true,
+    fade:true
+    })
+    </script>
+</body>
+</html>

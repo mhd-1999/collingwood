@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MyCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.nice-number.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header ng-include="'header.html'"></header>
+    <div class="container" style="margin-top:150px">
+        <div class="link-page">
+            <a href="index.html">Home / </a>
+            <a href="product.html">Bulbs / </a>
+            <a href="cart.html">Bespoke Bollards</a>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-7 col-sm-12 product-detail">
+                <div class="product-detail-img ">
+                    <img src="img/product/detail/detail1.jpg" alt="" id="detail-1">
+                </div>
+                <div class="product-detail-img ">
+                    <img src="img/product/detail/detail2.jpg" alt="" id="detail-2">
+                </div>
+                <div class="product-detail-img ">
+                    <img src="img/product/detail/detail3.jpg" alt="" id="detail-3">
+                </div>
+                <div class="product-detail-img ">
+                    <img src="img/product/detail/detail4.jpg" alt="" id="detail-4">
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12 product-option">
+                <div class="product-detail-text">
+                    <h4>BESPOKE BOLLARDS</h4>
+                    <p>Low voltage Oak wood</p>
+                </div>
+                <div class="product-detail-color">
+                    <div class="color1">
+                        <a href=""><img src="img/product/detail/color1.jpg" alt=""></a>
+                    </div>
+                    <div class="color2">
+                        <a href=""><img src="img/product/detail/color2.jpg" alt=""></a>
+                    </div>                    
+                </div>
+                <div class="product-color-select">
+                    <select name="" id="">
+                        <option value="">COLOUR TEMPERATURE</option>
+                        <option value="">4000k</option>
+                        <option value="">3500k</option>
+                        <option value="">3200k</option>
+                        <option value="">3000k</option>                        
+                    </select>
+                </div>
+                <div class="product-quantity">
+                    <span class="text-quan">QUANTITY</span>
+                    <div class="form-quantity">
+                        <input type="number" value="1" class="quantity" max="10000" min="1">
+                    </div>
+                </div>
+                <div class="product-btn">
+                   <button class="product-btn1"><a href="#">ENQUIRE</a></button>
+                   <button class="product-btn2"><a href="#">ADD TO CART</a></button>
+                    
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 product-dess">
+                <a href="#">DESCRIPTION</a>
+            </div>
+            <div class="col-md-2 col-sm-12 product-acess">
+                <a href="#!access">ACCESSORIES</a>
+            </div>
+            <hr>
+            <ng-view></ng-view>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6" style="border-right:1px solid #5f9baf;color: #fff;padding: 30px;">a</div>
+            <div class="col-6" style="border-left:1px solid #5f9baf;color: #fff;padding: 30px;">a</div>
+        </div>
+    </div>
+    <h2 style="text-align: center;padding: 30px;">Relate Products</h2>
+    <div class="container" style="margin-bottom:100px">
+        <div class="wrapper">
+            <div class="card">
+                <img src="img/pro2.jpg" alt="">
+              <div class="content">
+                <div class="row">
+                  <div class="details">
+                    <span>Bulbs</span>
+                    <p>Midi Bollard</p>
+                  </div>
+                  <div class="price">$30</div>
+                </div>
+                <div class="buttons">
+                  <a href="cart.html" ><i class="fas fa-shopping-cart"></i></a>
+                  <a href="cart.html" ><i class="fas fa-shopping-bag"></i></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/pro3.jpg" alt="">
+              <div class="content">
+                <div class="row">
+                  <div class="details">
+                    <span>Bulbs</span>
+                    <p>Bespoke Bollards</p>
+                  </div>
+                  <div class="price">$80</div>
+                </div>
+                <div class="buttons">
+                  <a href="cart.html" ><i class="fas fa-shopping-cart"></i></a>
+                  <a href="cart.html" ><i class="fas fa-shopping-bag"></i></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img src="img/pro4.jpg" alt="">
+              <div class="content">
+                <div class="row">
+                  <div class="details">
+                    <span>Spot Lights</span>
+                    <p>RDSL</p>
+                  </div>
+                  <div class="price">$50</div>
+                </div>
+                <div class="buttons">
+                  <a href="cart.html" ><i class="fas fa-shopping-cart"></i></a>
+                  <a href="cart.html" ><i class="fas fa-shopping-bag"></i></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img src="img/pro5.jpg" alt="">
+              <div class="content">
+                <div class="row">
+                  <div class="details">
+                    <span>Smart light</span>
+                    <p>Smart Non Dimmable Bridge</p>
+                  </div>
+                  <div class="price">$50</div>
+                </div>
+                <div class="buttons">
+                  <a href="cart.html" ><i class="fas fa-shopping-cart"></i></a>
+                  <a href="cart.html" ><i class="fas fa-shopping-bag"></i></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <img src="img/pro6.jpg" alt="">
+              <div class="content">
+                <div class="row">
+                  <div class="details">
+                    <span>Decoration Lights</span>
+                    <p>WL220</p>
+                  </div>
+                  <div class="price">$50</div>
+                </div>
+                <div class="buttons">
+                  <a href="cart.html" ><i class="fas fa-shopping-cart"></i></a>
+                  <a href="cart.html" ><i class="fas fa-shopping-bag"></i></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+    </div>
+    <footer ng-include="'footer.html'"></footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="font/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+        $('.product-detail').slick({
+        autoplay: true,
+        slidesToShow:1,
+        autoplaySpeed: 2000,
+        speed:800,
+        prevArrow:'<span class="prev-arrow"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow:'<span class="next-arrow"><i class="fas fa-chevron-right"></i></span>',
+        fade:true
+        })
+        $('.wrapper').slick({
+       centerMode:1,
+       slidesToShow:4,
+       autoplay:true,
+       autoplaySpeed:2000,
+       prevArrow:'<span class="prev-arrow"><i class="fas fa-chevron-left"></i></span>',
+       nextArrow:'<span class="next-arrow"><i class="fas fa-chevron-right"></i></span>',
+       responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        
+        
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        
+      }
+    }]
+    })
+    </script>
+</body>
+</html>

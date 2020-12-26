@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MyCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header ng-include="'header.html'"></header>
+    <main>
+        <div class="banner-area">
+            <div class="single-banner">
+                <div class="banner-img">
+                    <img src="img/banner1.jpg" alt="">
+                </div>
+                <div class="container">
+                <div class="banner-text">
+                    <h2>LEADERS IN INTEGRATED LED LIGHTS</h2>
+                    <p>LED lights from Collingwood, the UK specialist, are at the forefront of long life, energy-efficient lighting technology. Discover new ways to master light.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                </div>
+            </div>
+            <div class="single-banner">
+                <div class="banner-img">
+                    <img src="img/banner2.jpg" alt="">
+                </div>
+                <div class="container">
+                <div class="banner-text">
+                    <h2>LEADERS IN INTEGRATED LED LIGHTS</h2>
+                    <p>LED lights from Collingwood, the UK specialist, are at the forefront of long life, energy-efficient lighting technology. Discover new ways to master light.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                </div>
+            </div>
+            <div class="single-banner">
+                <div class="banner-img">
+                    <img src="img/banner3.jpg" alt="">
+                </div>
+                <div class="container">
+                <div class="banner-text">
+                    <h2>LEADERS IN INTEGRATED LED LIGHTS</h2>
+                    <p>LED lights from Collingwood, the UK specialist, are at the forefront of long life, energy-efficient lighting technology. Discover new ways to master light.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container intro" style="margin-top: 50px">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-img">
+                        <img src="img/introduce1.jpg" alt="">
+                    </div>
+                    <div class="intro-text">
+                       <a href="">INSPIRATION ></a>
+                       <p>Galleries and case studies to help inspire your lighting designs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-video">
+                        <video autoplay loop muted>
+                            <source src="img/video.mp4" type="video/mp4">
+                        </video>
+                    </div>   
+                    <div class="intro-text-video">
+                        <a href="">DESIGN SERVICE ></a>
+                        <p>Allow our experts to assist in planning your lighting schemes.</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="product-area">
+            <div class="product-single">
+                <img src="img/pro1.jpg" alt="">
+            </div>
+            <div class="product-single">
+                <img src="img/pro2.jpg" alt="">
+            </div>
+            <div class="product-single">
+                <img src="img/pro3.jpg" alt="">
+            </div>
+            <div class="product-single">
+                <img src="img/pro4.jpg" alt="">
+            </div>
+            <div class="product-single">
+                <img src="img/pro5.jpg" alt="">
+            </div>
+        </div>
+        <div class="container intro2" style="margin-top: 50px">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-img-2">
+                        <img src="img/introduce2.jpg" alt="">
+                    </div>
+                    <div class="intro-text-2">
+                       <a href="">OUTDOOR LIGHTING ></a>
+                       <p>High-quality landscape lights to enhance any scheme.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-img-3">
+                        <img src="img/introduce3.jpg" alt="">
+                    </div>
+                    <div class="intro-text-3">
+                       <a href="">COMMERCIAL LIGHTING></a>
+                       <p>A comprehensive portfolio of cost effective luminaires to suit every commercial application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-bot">
+            <div class="intro-bot-img">
+                <img src="img/introduce5.jpg" alt="">
+                
+            </div>                   
+        </div>
+        
+    </main>
+    <footer ng-include="'footer.html'"></footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="font/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+    $('.banner-area').slick({
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 2000,
+        speed:800,
+        arrows: false,
+        dots: true,
+        fade:true
+    })
+    $('.product-area').slick({
+        centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+    })
+    </script>
+</body>
+</html> 
