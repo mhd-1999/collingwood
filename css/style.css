@@ -9,6 +9,9 @@
 img{
     width: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .logo{
     width: 7%;
 }
